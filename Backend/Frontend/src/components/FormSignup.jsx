@@ -12,7 +12,7 @@ const FormSignup = () => {
 
     console.log(" i  am here !");
     try {
-      const response = await fetch('http://localhost:5000/user/signup', {
+      const response = await fetch('https://chatting-1-w2or.onrender.com/user/signup', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
