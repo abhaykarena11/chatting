@@ -9,7 +9,7 @@ export default function Logout() {
     try {
       const token = Cookies.get("token");
       if(token){
-        const response = await axios.get("http://localhost:5000/user/logout",{
+        const response = await axios.get("https://chatting-1-w2or.onrender.com/user/logout",{
           withCredentials: true,
           headers: {
               Authorization: `Bearer ${token}`, // Replace YOUR_ACCESS_TOKEN with the actual token
